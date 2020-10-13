@@ -95,6 +95,7 @@ ul {
 
 ul li {
     margin: 2px;
+    font-size: 22px;
 }
 
 ul li:hover {
