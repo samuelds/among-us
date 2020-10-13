@@ -72,6 +72,10 @@ body {
     text-transform: uppercase;
 }
 
+.card .options {
+    margin-top: 10px;
+}
+
 .card .infos .status.impostor {
     color: #e74c3c;
 } 
