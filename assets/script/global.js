@@ -3,7 +3,7 @@ let defaultStatus = "crewmate";
 function resetStatus(card, text) {
     card.removeClass('isDead');
     const status = card.find('.status');
-    status.removeClass('imposter');
+    status.removeClass('impostor');
     status.removeClass('suspect');
     status.html(text);
 }
@@ -41,7 +41,6 @@ $(window).on("load", function(){
     $('.crewmate').click(function(event) {
         const card = $(this).closest('.card');
         resetStatus(card, "crewmate");
-        console.log("oui !!");
     });
 
     $('.suspect').click(function(event) {
