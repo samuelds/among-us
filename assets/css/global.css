@@ -1,0 +1,118 @@
+body {
+    background: #8f97a3;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#border {
+    padding: 15px;
+    background-color: #56606c;
+}
+
+#parameters {
+    display: flex;
+    color: #fff;
+    width: 100%;
+    justify-content: center;
+    margin: 10px;
+}
+
+.btn {
+    background-color: #e8f1f8;
+    padding: 5px;
+    color: #000;
+    border-radius: 5px;
+}
+
+.btn.active {
+    background: #989fa7;
+    color: #fff;
+}
+
+#cards {
+    background-color: #bbd3ef;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 500px;
+    background-color: #e8f1f8;
+    margin: 10px;
+    padding: 10px;    
+    display: flex;
+    border: 2px #2c3e50 solid;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #748594;
+}
+
+.card .icon img {
+    width: 60px;
+    height: auto;
+}
+
+.card .infos {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.card .infos .status {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card .infos .status.impostor {
+    color: #e74c3c;
+} 
+
+.card .infos .status.suspect {
+    color: #c0392b;
+} 
+
+.card.isDead {
+    background: #989fa7;
+}
+
+.card.removed {
+    display: none;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    margin: 2px;
+}
+
+ul li:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+li + li::before {
+    content: " - ";
+}
+
+#coop {
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    color: #fff;
+}
+
+#coop a {    
+    color: #fff;
+}
