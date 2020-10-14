@@ -1,10 +1,7 @@
 body {
-    background: #8f97a3;
+    background-color: #8f97a3 !important;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    align-content: center;
-    justify-content: center;
 }
 
 #border {
@@ -32,64 +29,85 @@ body {
     color: #fff;
 }
 
-#cards {
+#players {
     background-color: #bbd3ef;
     border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding: 5px 15px;
+    margin: 5px;
 }
 
-.card {
-    flex: 1 1 500px;
+.player {
     background-color: #e8f1f8;
-    margin: 10px;
-    padding: 10px;    
+    padding: 5px;
+    margin: 6px;
     display: flex;
     border: 2px #2c3e50 solid;
     border-radius: 10px;
-    box-shadow: 10px 10px 5px #748594;
+    box-shadow: 5px 5px 5px #748594;
 }
 
-.card .icon img {
+.player .avatar {
+    margin-right: 10px;
+}
+
+.player .avatar img {
     width: 60px;
     height: auto;
+    margin: 0;
+    padding: 0;
 }
 
-.card .infos {  
+.player .infos {  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     text-align: center;
-    width: 100%;
+    margin: 10px 20px 0 0;
 }
 
-.card .infos .status {
+.player .infos .close i {
+    float: right;
+    display: inline-block;
+}
+
+.player .infos .status {
     font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
+    width: 190px;
 }
 
-.card .options {
-    margin-top: 10px;
-}
-
-.card .infos .status.impostor {
+.player .infos .status.impostor {
     color: #e74c3c;
 } 
 
-.card .infos .status.suspect {
+.player .infos .status.suspect {
     color: #c0392b;
-} 
+}
 
-.card.isDead {
+.player .infos .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player .infos .top .fas:hover {
+    cursor: pointer;
+}
+
+.player.isDead {
     background: #989fa7;
 }
 
-.card.removed {
+.player.removed {
     display: none;
+}
+
+.dead {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 ul {
